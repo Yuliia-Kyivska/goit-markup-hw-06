@@ -780,6 +780,7 @@ padding: 40px;
   margin: 0;
   height: 40px;
   width: 448px;
+  padding-left: 42px;
 }
 .form-fild label {
   padding-bottom: 4px;
@@ -816,17 +817,21 @@ textarea {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  
+ 
 }
 
 
 
 .form-check{
 margin-bottom: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .form-check input {
-padding-right: 9px;
+margin-right: 9px;
 width: 16px;
 height: 15px;
 }
+
