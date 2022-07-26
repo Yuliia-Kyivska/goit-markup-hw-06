@@ -68,11 +68,11 @@
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
 
-          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+          <button type="submit" class="hero-button" data-modal-open>Заказать услугу</button>
 
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button data-modal-close class="close-bt">
+              <button type="submit" data-modal-close class="close-bt">
                 <svg class="close-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#close-black"></use>
                 </svg>
@@ -86,7 +86,7 @@
                     <input class="hero-modal-input" type="text" name="name" id="name" required />
                     
                     <svg class="modal-icon-1">
-                      <use  href="./images/icons.svg#name"></use>
+                      <use  href="./images/icons.svg#name" width="12px" height="12px"></use>
                   </svg>
                 
                  
@@ -95,7 +95,7 @@
                   <div class="form-fild">
                     <label for="tel">Телефон</label>
                     <input class="call-back-tel" type="text" name="tel" id="tel" required />
-                    <svg class="modal-icon-1">
+                    <svg class="modal-icon-1"  width="13px" height="13px">
                       <use  href="./images/icons.svg#tel"></use>
                   </svg>
                 
@@ -105,7 +105,7 @@
                     <label for="mail">Почта</label>
                     <input class="call-back-mail" type="email" name="mail" id="mail" required />
                     <svg class="modal-icon-1">
-                      <use  href="./images/icons.svg#mail-hero-modal"></use>
+                      <use  href="./images/icons.svg#mail-hero-modal" width="15px" height="12px"></use>
                   </svg>
                   </div>
 
@@ -120,16 +120,19 @@
                     ></textarea>
                   </div>
 
-                  <div class="form-check">
-                    <input
-                      class="call-back-terms"
-                      type="checkbox"
-                      name="terms"
-                      id="terms"
-                      value="terms"
-                    />
-                    <label for="terms"
-                      >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                  <div>
+                    
+                    <label for="terms" class="form-check"> Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                      <input
+                    type="checkbox"
+                    checked="checked"/>
+
+                      <span class="checkmark">
+                        <svg class="checkmark-icon" width="16px" height="15px">
+                          <use href="./images/icons.svg#noted"></use>
+                        </svg>
+                      </span>
+                      
                   </label>
                   
                   </div>
