@@ -746,3 +746,44 @@ h3.team-title {
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
+/*модальное окно скция "hero"*/
+
+.hero-submit{
+ 
+}
+.hero-submit-title{
+  font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--color-dark);
+}
+textarea{
+  /*resize: none;*/
+}
+form {
+  width: 488px;
+  height: 501px;
+  outline: 1px solid blue;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+
+.form-fild{
+  outline: 1px solid rgb(225, 14, 190);
+  display: flex;
+ flex-direction: column;
+margin-bottom: 4px;
+}
+.form-fild input{
+  margin: 0;
+  padding: 0;
+}
+.form-check{
+
+}
