@@ -785,6 +785,7 @@ textarea {
 .call-back-comment {
   padding: 12px 16px;
 }
+
 .form-fild-comment textarea::placeholder {
   font-style: normal;
   font-weight: 400;
@@ -794,66 +795,48 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-check {
-  display: block;
-  align-items: center;
+
+/* оформление Условия договора*/
+
+.checkbox-label {
   position: relative;
-  cursor: pointer;
-  font-size: 14px;
-   padding-left: 9px;
+   padding-left: 30px;
    margin-bottom: 30px;
+   display: block;
+   align-items: center;
+      cursor: pointer;
 } 
 
-/* Создание пользовательского флажка */
-.checkmark{
+.checkbox{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  appearance: none;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 22px;
-  height: 21px;
-  border: 3px solid black;
-  background-color:var(--white-color);
+  top:4px;
+  left:18px;
+  border: 2px solid black;
   border-radius: 2px;
-  
+  width: 16px;
+  height: 16px;
 }
 
-/* Скрыть флажок браузера по умолчанию */
-.form-check input{
-position: absolute;
-opacity: 0;
-cursor: pointer;
-height: 0;
-width: 0;
+.checkbox:checked{
+  border: none;
 }
 
-
-.checkmark-icon {
-fill:white;
-
-}
-
-/* При наведении мыши добавляем синий цвет фона и синий бордер */
-.form-check input:checked ~ .checkmark {
-  background-color: #2196f3;
-  border: 3px solid var(--blue-logo-color);
+.checkmark-icon{
+  position: absolute;
+  display: inline-block;
+  height:16px;
+ top:4px;
+ left:18px;
 }
 
 
-
-
-
- 
-  .form-check .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    
-    transform: rotate(45deg);
-  }
-
-
-
-
+.checkbox-label input:checked ~ .checkmark-icon {
+  background-color: var(--blue-logo-color);
+  border-radius: 2px;
+  background-size: contain;
+}
