@@ -72,77 +72,7 @@
 
           <button type="submit" class="hero-button" data-modal-open>Заказать услугу</button>
 
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button type="submit" data-modal-close class="close-bt">
-                <svg class="close-icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#close-black"></use>
-                </svg>
-              </button>
-
-              <div class="hero-modal-submit">
-                <p class="hero-submit-title">Оставьте свои данные, мы вам перезвоним</p>
-                <form class="call-back-form">
-                  <div class="form-fild">
-                    <label for="name" class="hero-modal-label">Имя</label>
-                    <input class="hero-modal-input" type="text" name="name" id="name" required />
-                    <svg class="modal-icon-1" width="12px" height="12px">
-                      <use href="./images/icons.svg#name"></use>
-                    </svg>
-                  </div>
-
-                  <div class="form-fild">
-                    <label for="tel">Телефон</label>
-                    <input class="call-back-tel" type="text" name="tel" id="tel" required />
-                    <svg class="modal-icon-1" width="13px" height="13px">
-                      <use href="./images/icons.svg#tel"></use>
-                    </svg>
-                  </div>
-
-                  <div class="form-fild">
-                    <label for="mail">Почта</label>
-                    <input class="call-back-mail" type="email" name="mail" id="mail" required />
-                    <svg class="modal-icon-1" width="15px" height="12px">
-                      <use
-                        href="./images/icons.svg#mail-hero-modal"
-                        width="15px"
-                        height="12px"
-                      ></use>
-                    </svg>
-                  </div>
-
-                  <div class="form-fild-comment">
-                    <label for="comment">Комментарий</label>
-                    <textarea
-                      class="call-back-comment"
-                      name="comment"
-                      id="comment"
-                      rows="8"
-                      placeholder="Введите текст"
-                    ></textarea>
-                  </div>
-
-                  <div>
-                    <label class="checkbox-label">
-                      <input class="checkbox" type="checkbox" checked="checked" name="check" />
-                      <span class="checkmark-icon">
-                        <svg width="16px" height="16px">
-                          <use href="./images/icons.svg#icon-check"></use>
-                        </svg>
-                      </span>
-                      Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-                    </label>
-                  </div>
-
-                  <button type="submit" class="hero-submit">
-                    
-                      <span class="activ-submit span-subscribe">Отправить</span>
-                   
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </section>
 
@@ -569,7 +499,77 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="submit" data-modal-close class="close-bt">
+          <svg class="close-icon" width="18px" height="18px">
+            <use href="./images/icons.svg#close-black"></use>
+          </svg>
+        </button>
 
+        
+          <p class="hero-submit-title">Оставьте свои данные, мы вам перезвоним</p>
+          <form class="call-back-form">
+            <div class="form-fild">
+              <label for="name" class="hero-modal-label">Имя</label>
+              <input class="hero-modal-input" type="text" name="name" id="name" required />
+              <svg class="modal-icon-1" width="12px" height="12px">
+                <use href="./images/icons.svg#name"></use>
+              </svg>
+            </div>
+
+            <div class="form-fild">
+              <label for="tel">Телефон</label>
+              <input class="call-back-tel" type="text" name="tel" id="tel" required />
+              <svg class="modal-icon-1" width="13px" height="13px">
+                <use href="./images/icons.svg#tel"></use>
+              </svg>
+            </div>
+
+            <div class="form-fild">
+              <label for="mail">Почта</label>
+              <input class="call-back-mail" type="email" name="mail" id="mail" required />
+              <svg class="modal-icon-1" width="15px" height="12px">
+                <use
+                  href="./images/icons.svg#mail-hero-modal"
+                  width="15px"
+                  height="12px"
+                ></use>
+              </svg>
+            </div>
+
+            <div class="form-fild-comment">
+              <label for="comment">Комментарий</label>
+              <textarea
+                class="call-back-comment"
+                name="comment"
+                id="comment"
+                rows="8"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+
+            <div>
+              <label class="checkbox-label">
+                <input class="checkbox" type="checkbox" checked="checked" name="check" />
+                <span class="checkmark-icon">
+                  <svg width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                </span>
+                Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+              </label>
+            </div>
+
+            <button type="submit" class="hero-submit">
+              
+                <span class="activ-submit span-subscribe">Отправить</span>
+             
+            </button>
+          </form>
+       
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

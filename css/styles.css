@@ -657,6 +657,7 @@ h3.team-title {
 .modal {
   position: relative;
   width: 528px;
+  height: 581px;
   padding: 40px;
 
   background-color: var(--bgmodal);
@@ -664,8 +665,8 @@ h3.team-title {
   border-radius: 4px;
   transition: transform 300ms ease-out;
 }
-.close-icon:hover,
-.close-icon:focus{
+.close-bt:hover .close-icon,
+.close-bt:focus .close-icon{
   fill: var(--blue-logo-color);
 }
 
@@ -743,13 +744,13 @@ h3.team-title {
 /*модальное окно секция "hero"*/
 
 .hero-submit-title {
-  padding-top: 20px;
-  font-style: normal;
+  
+  
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(--color-dark);
   margin-bottom: 12px;
 }
@@ -762,8 +763,8 @@ h3.team-title {
 }
 
 .form-fild label {
-  padding-bottom: 4px;
-  display: flex;
+  margin-bottom: 4px;
+  display: block;
 }
 
 .form-fild input {
