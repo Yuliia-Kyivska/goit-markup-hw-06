@@ -765,6 +765,13 @@ h3.team-title {
 .form-fild label {
   margin-bottom: 4px;
   display: block;
+  font-size: 12px;
+line-height: calc(14 / 12);
+
+
+letter-spacing: 0.01em;
+
+color: #757575;
 }
 
 .form-fild input {
