@@ -436,7 +436,7 @@
           </div>
 
           <div class="footer-social">
-            <h3 class="footer-social-title">присоединяйтесь</h3>
+            <p class="subscribe-title">присоединяйтесь</p>
 
             <ul class="list social-list">
               <li class="social-item">
@@ -476,7 +476,7 @@
             <p class="subscribe-title">Подпишитесь на рассылку</p>
 
             <form class="footer-submit-form">
-              <label for="email-footer"></label>
+            
               <input
                 class="footer-submit-input"
                 type="email"
@@ -486,19 +486,20 @@
                 required
               />
 
-              <button type="submit" class="button-submit">
-                <span class="activ-submit">
-                  <span class="span-subscribe">Подписаться</span>
+              <button type="submit" class="hero-button">
+                
+             <span class="span-subscribe"> Подписаться</span>
                   <svg class="social-icon" width="24px" height="24px">
                     <use href="./images/icons.svg#footer-send"></use>
                   </svg>
-                </span>
+               
               </button>
             </form>
           </div>
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="submit" data-modal-close class="close-bt">
@@ -509,37 +510,51 @@
 
         
           <p class="hero-submit-title">Оставьте свои данные, мы вам перезвоним</p>
-          <form class="call-back-form">
-            <div class="form-fild">
-              <label for="name" class="hero-modal-label">Имя</label>
-              <input class="hero-modal-input" type="text" name="name" id="name" required />
-              <svg class="modal-icon-1" width="12px" height="12px">
+          
+          <form class="form">
+           <label for="name" class="form-label">
+                <span class="form-text">Имя</span>
+                <span class="form-fild">
+              <input class="form-input" type="text" name="name" id="name" required />
+              <svg class="form-icon" width="12px" height="12px">
                 <use href="./images/icons.svg#name"></use>
               </svg>
-            </div>
+            </span>
+            </label>
+            
 
-            <div class="form-fild">
-              <label for="tel">Телефон</label>
-              <input class="call-back-tel" type="text" name="tel" id="tel" required />
-              <svg class="modal-icon-1" width="13px" height="13px">
+           
+              <label for="tel" class="form-label">
+                <span class="form-text">Телефон</span>
+                <span class="form-fild">
+
+              <input class="form-input" type="text" name="tel" id="tel" required />
+              <svg class="form-icon" width="13px" height="13px">
                 <use href="./images/icons.svg#tel"></use>
               </svg>
-            </div>
 
-            <div class="form-fild">
-              <label for="mail">Почта</label>
-              <input class="call-back-mail" type="email" name="mail" id="mail" required />
-              <svg class="modal-icon-1" width="15px" height="12px">
+                </span>
+          </label>
+
+            
+              <label for="mail" class="form-label">
+                <span class="form-text">Почта</span>
+                <span class="form-fild">
+              <input class="form-input" type="email" name="mail" id="mail" required />
+              <svg class="form-icon" width="15px" height="12px">
                 <use
                   href="./images/icons.svg#mail-hero-modal"
                   width="15px"
                   height="12px"
                 ></use>
               </svg>
-            </div>
+                </span>
+          </label>
 
-            <div class="form-fild-comment">
-              <label for="comment">Комментарий</label>
+           
+              <label for="comment" class="form-label">
+                <span class="form-text">Комментарий</span>
+                <span class="form-fild-comment">
               <textarea
                 class="call-back-comment"
                 name="comment"
@@ -547,23 +562,24 @@
                 rows="8"
                 placeholder="Введите текст"
               ></textarea>
-            </div>
+                </span>
+          </label>
 
-            <div>
+            <div class="chacks">
               <label class="checkbox-label">
-                <input class="checkbox" type="checkbox" checked="checked" name="check" />
+                <input class="checkbox visually-hidden" type="checkbox" checked="checked" name="check" />
                 <span class="checkmark-icon">
                   <svg width="16px" height="16px">
                     <use href="./images/icons.svg#icon-check"></use>
                   </svg>
                 </span>
-                Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора</a>
               </label>
             </div>
 
-            <button type="submit" class="hero-submit">
+            <button type="submit" class="hero-button">
               
-                <span class="activ-submit span-subscribe">Отправить</span>
+                Отправить
              
             </button>
           </form>
